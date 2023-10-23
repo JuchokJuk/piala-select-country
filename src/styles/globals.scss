@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html,
+body,
+#__next {
+  min-height: 100vh;
+}
+
+body {
+  min-width: 320px;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #a4a4a4;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.scaleOnHover2 {
+  transition: transform 0.4s;
+  cursor: pointer;
+  @include hover {
+    transform: scale(1.02);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:active {
+      transform: scale(1);
+    }
+  }
+}

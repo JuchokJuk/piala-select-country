@@ -1,0 +1,16 @@
+$sm: 768px;
+
+$min-sm: $sm;
+$max-xs: $sm - 0.02px;
+
+@mixin sm {
+  @media (min-width: $min-sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: $max-xs) {
+    @content;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin font(
+  $font-size,
+  $font-weight,
+  $line-height,
+  $letter-spacing,
+  $font-family: var(--PT-sans),
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+}
